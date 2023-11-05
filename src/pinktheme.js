@@ -288,14 +288,16 @@ function getComputedColors() {
 const computedColors = getComputedColors();
 
 const pinkPalette = [
-  "rgb(244, 194, 219)",
-  "rgb(235, 139, 159)",
-  "rgb(108, 66, 88)",
-  "rgb(255, 244, 253)",
-  "rgb(255, 208, 233)",
-  "rgb(255, 243, 254)",
-  "rgb(251, 244, 215)", // yellow wild card
-  "rgb(255, 196, 182)",
+  "rgb(255, 255, 255)",
+  "rgb(255, 202, 212)",
+  "rgb(192, 132, 151)",
+  "rgb(255, 194, 203)",
+  "rgb(255, 173, 186)",
+  "rgb(148, 76, 99)",
+  "rgb(135, 69, 90)",
+  "rgb(108, 55, 72)",
+  "rgb(247, 175, 157)",
+  "rgb(255, 235, 238)",
 ];
 
 function invertColor(rgb) {
