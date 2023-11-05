@@ -1,5 +1,4 @@
-import { Mod } from "discord-modding-framework";
-import { ModJSON } from "discord-modding-framework/dist/mod";
+import { Mod, ModJSON } from "discord-modding-framework";
 import fs from "fs";
 import path from "path";
 const CombinedMod = new Mod("combined-mod");
