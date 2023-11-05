@@ -15,7 +15,9 @@ const minimizeableDmsJson: ModJSON = {
   events: {
     events: {
       "dom-ready": {
-        on: [minimizeableDmsJs],
+        on: [
+          `(mainWindow) => { mainWindow.webContents.executeJavaScript(\`${minimizeableDmsJs}\`)}`,
+        ],
         once: [],
       },
     },
@@ -37,7 +39,9 @@ const pinkThemeJson: ModJSON = {
   events: {
     events: {
       "dom-ready": {
-        on: [pinkThemeJs],
+        on: [
+          `(mainWindow) => { mainWindow.webContents.executeJavaScript(\`${pinkThemeJs}\`)}`,
+        ],
         once: [],
       },
     },
