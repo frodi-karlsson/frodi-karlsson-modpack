@@ -16,10 +16,9 @@ const minimizeableDmsJson: ModJSON = {
     events: {
       "dom-ready": {
         on: [
-          `mainWindow.webContents.executeJavaScript(\`${minimizeableDmsJs.replaceAll(
-            "`",
-            "\\`"
-          )}\`)`,
+          `mainWindow.webContents.executeJavaScript(\`${minimizeableDmsJs
+            .replaceAll("`", "\\`")
+            .replaceAll("${", "\\${")}\`)`,
         ],
         once: [],
       },
@@ -43,10 +42,9 @@ const pinkThemeJson: ModJSON = {
     events: {
       "dom-ready": {
         on: [
-          `mainWindow.webContents.executeJavaScript(\`${pinkThemeJs.replaceAll(
-            "`",
-            "\\`"
-          )}\`)`,
+          `mainWindow.webContents.executeJavaScript(\`${pinkThemeJs
+            .replaceAll("`", "\\`")
+            .replaceAll("${", "\\${")}\`)`,
         ],
         once: [],
       },
