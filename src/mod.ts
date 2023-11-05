@@ -4,10 +4,10 @@ import fs from "fs";
 import path from "path";
 const SmallerWindow = new Mod("smaller-window");
 
-const minimizeableDmsJs = fs.readFileSync(
-  path.resolve(__dirname, "minimizeDms.js"),
-  "utf-8"
-);
+const minimizeableDmsJs =
+  "{" +
+  fs.readFileSync(path.resolve(__dirname, "minimizeDms.js"), "utf-8") +
+  "}";
 const minimizeableDmsJson: ModJSON = {
   id: "minimizeable-dms",
   version: "1.0.0",
@@ -26,10 +26,8 @@ SmallerWindow.modifyWindow((mainWindow) => {
   mainWindow.setMinimumSize(100, 100);
 });
 
-const pinkThemeJs = fs.readFileSync(
-  path.resolve(__dirname, "pinktheme.js"),
-  "utf-8"
-);
+const pinkThemeJs =
+  "{" + fs.readFileSync(path.resolve(__dirname, "pinktheme.js"), "utf-8") + "}";
 const pinkThemeJson: ModJSON = {
   id: "pink-theme",
   version: "1.0.0",
