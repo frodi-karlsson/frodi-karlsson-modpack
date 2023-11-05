@@ -18,7 +18,7 @@ const minimizeableDmsJson: ModJSON = {
         on: [
           `mainWindow.webContents.executeJavaScript(\`${minimizeableDmsJs
             .replaceAll("`", "\\`")
-            .replaceAll("${", "\\$${")}\`)`,
+            .replaceAll("${", "$\\${")}\`)`,
         ],
         once: [],
       },
@@ -44,7 +44,7 @@ const pinkThemeJson: ModJSON = {
         on: [
           `mainWindow.webContents.executeJavaScript(\`${pinkThemeJs
             .replaceAll("`", "\\`")
-            .replaceAll("${", "\\$${")}\`)`,
+            .replaceAll("${", "$\\${")}\`)`,
         ],
         once: [],
       },
