@@ -1,1 +1,0 @@
-{"id":"smaller-window","version":"0.0.1","dependencies":[],"events":{"events":{},"windowModifications":["(mainWindow) => {\n    mainWindow.setMinimumSize(100, 100);\n}"]}}

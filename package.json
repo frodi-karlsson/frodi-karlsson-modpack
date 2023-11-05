@@ -13,6 +13,6 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "discord-modding-framework": "^1.0.6"
+    "discord-modding-framework": "file:../../discord-mod-manager"
   }
 }
