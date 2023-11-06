@@ -1,3 +1,5 @@
+const isPinkTheme = window.modConfig["pinkTheme"] === true;
+if (!isPinkTheme) return;
 const themeMap = `
   --activity-card-background: var(--primary-700);
   --android-navigation-bar-background: var(--primary-830);
